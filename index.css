@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+  :root {
+    --navbar-height: 59px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.7;
+  }
+  .logo {
+    background-color: white;
+    height: 56px;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  .navbar ul li a {
+    color: aquamarine;
+    display: block;
+    padding: 4px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .navbar ul li a:hover {
+    color: aquamarine;
+    background-color: black;
+  }
